@@ -63,7 +63,7 @@ const Home = () => {
             rel="noopener noreferrer"
             download="MaurosResume.pdf"
           >
-            DOWNLOAD Mauro CV
+            DOWNLOAD CV
           </a>
       </div>
     </div>
