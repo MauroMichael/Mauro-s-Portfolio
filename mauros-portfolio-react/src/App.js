@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home'
 import About from './components/About';
+import Proyects from './components/Proyects';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Route path="/" element={<Layout />}>
            <Route index element={<Home />} />
            <Route path="about" index element={<About />} />
+           <Route path="/proyects" index element={<Proyects />} />
+
 
         </Route>
       </Routes>
