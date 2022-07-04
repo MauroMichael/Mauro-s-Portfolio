@@ -19,7 +19,7 @@ const Contact = () => {
         emailjs.sendForm('gmail', 'template_j3wjlu9', form.current, 'QgarNshOFEk1LCngs')
           .then(() => {
               alert('Message succesfully sent!')
-              window.location.reload(false)
+              window.location.reload(true)
           }, () => {
               alert('Failed to send the message, please try again')
           });
