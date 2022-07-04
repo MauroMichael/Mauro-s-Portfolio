@@ -10,6 +10,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Loader from 'react-loaders'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -52,16 +53,16 @@ const About = () => {
       <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-          </div>
-          <div className="face2">
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
           </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
           <div className="face3">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
           </div>
           <div className="face4">
-            <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
           </div>
           <div className="face5">
             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
@@ -71,6 +72,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Loader type='pacman' />
     </div>
   )
 }

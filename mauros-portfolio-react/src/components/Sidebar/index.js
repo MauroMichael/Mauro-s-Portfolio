@@ -69,7 +69,7 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://walink.co/e0f582"
+          href="https://wa.me/5491134587370"
         >
           <FontAwesomeIcon icon={faWhatsapp} color="#4d4d4e" />
         </a>
