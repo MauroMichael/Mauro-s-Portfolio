@@ -2,10 +2,12 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const form = useRef()
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const form = useRef();
+    const nav = useNavigate();
 
     useEffect(() => {
         setTimeout(() => {
@@ -19,7 +21,7 @@ const Contact = () => {
         emailjs.sendForm('gmail', 'template_j3wjlu9', form.current, 'QgarNshOFEk1LCngs')
           .then(() => {
               alert('Message succesfully sent!')
-              window.location.reload(true)
+              return nav('/')
           }, () => {
               alert('Failed to send the message, please try again')
           });
