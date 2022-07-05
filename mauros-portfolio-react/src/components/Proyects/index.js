@@ -11,6 +11,8 @@ import Pftres from '../../assets/images/pf_tres.jpg';
 import Pfcuatro from '../../assets/images/pf_cuatro.jpg';
 import Pfcinco from '../../assets/images/pf_cinco.jpg';
 import Pfseis from '../../assets/images/pf_seis.jpg';
+import Pitresb from '../../assets/images/pi_tres_b.jpg';
+
 
 
 
@@ -22,39 +24,43 @@ class DemoCarousel extends Component {
             <Carousel showThumbs={false} showArrows={true}  infiniteLoop={true}>
                 <div>
                     <img src={Piuno} alt='piuno'/>
-                    <p className="legend">Landing-Individual-Proyect</p>
+                    <p className="legend">Landing - Individual - Proyect</p>
                 </div>
                 <div>
                     <img src={Pidos} alt='pidos' />
-                    <p className="legend">Home-Individual-Proyect</p>
+                    <p className="legend">Home - Individual - Proyect</p>
                 </div>
                 <div>
                     <img src={Pitres} alt='pitres' />
-                    <p className="legend">Component-Create Breed</p>
+                    <p className="legend">Component - Breed Detail</p>
+                </div>
+                <div>
+                    <img src={Pitresb} alt='pitresb' />
+                    <p className="legend">Component - Create Breed</p>
                 </div>
                 <div>
                     <img src={Pfuno} alt='Pfuno'/>
-                    <p className="legend">Landing-Individual-Proyect</p>
+                    <p className="legend">Home - Final - Proyect</p>
                 </div>
                 <div>
                     <img src={Pfdos} alt='Pfdos' />
-                    <p className="legend">Home-Individual-Proyect</p>
+                    <p className="legend">Products - Final - Proyect</p>
                 </div>
                 <div>
                     <img src={Pftres} alt='Pftres' />
-                    <p className="legend">Component-Create Breed</p>
+                    <p className="legend">Admin - Final - Proyect</p>
                 </div>
                 <div>
                     <img src={Pfcuatro} alt='Pfcuatro'/>
-                    <p className="legend">Landing-Individual-Proyect</p>
+                    <p className="legend">Favorites - Final - Proyect</p>
                 </div>
                 <div>
                     <img src={Pfcinco} alt='Pfcinco' />
-                    <p className="legend">Home-Individual-Proyect</p>
+                    <p className="legend">Shopping Cart - Final - Proyect</p>
                 </div>
                 <div>
                     <img src={Pfseis} alt='Pfseis' />
-                    <p className="legend">Component-Create Breed</p>
+                    <p className="legend">Product - Final - Proyect</p>
                 </div>
             </Carousel>
             </div>
