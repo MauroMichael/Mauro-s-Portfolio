@@ -10,7 +10,6 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -33,12 +32,12 @@ const About = () => {
         </h1>
         <p>
           I specialize in Full Stack Development. I have the ability to develop
-          web projects with the predictability that they are scalable and
-          modularizable so that I can program as a team.
+          web projects with predictability. Make them scalables and
+          modularizables so being able program with a team.
         </p>
         <p>
-          Have I learned how to program and do I know everything there is to
-          know? Never!!. You should never lose your sense of wonder and
+          Have I learned how to program and do I know almost everything there is
+          to know? Never!!. You should never lose your sense of astonishment and
           curiosity as a developer, and that's my motto. Explaining and teaching
           others gives me as much satisfaction as learning new things.
         </p>
@@ -46,7 +45,8 @@ const About = () => {
           Computer Science is my universe where I seek an answer to all unknowns
           with passion and enthusiasm. Having been an Account Manager of an IT
           company, I was always fascinated when requesting projects and seeing
-          their development and results.
+          their development and results. Was there when I discovered my real
+          passion.
         </p>
       </div>
 
@@ -72,7 +72,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type='pacman' />
     </div>
   )
 }
