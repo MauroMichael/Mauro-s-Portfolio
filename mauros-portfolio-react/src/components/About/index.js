@@ -43,10 +43,9 @@ const About = () => {
         </p>
         <p>
           Computer Science is my universe where I seek an answer to all unknowns
-          with passion and enthusiasm. Having been an Account Manager of an IT
-          company, I was always fascinated when requesting projects and seeing
-          their development and results. Was there when I discovered my real
-          passion.
+          with passion and enthusiasm. Having been an Account Manager of an IT company, 
+          I was always fascinated seeing the requested projects, their development and 
+          results. That’s where I discovered my true passion. 
         </p>
       </div>
 

@@ -4,12 +4,12 @@ import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import MaurosResume from '../../assets/docs/Resume.pdf'
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [loader, setLoader] = useState(false);
+  // const [loader, setLoader] = useState(false);
   const nameArray = ['a', 'u', 'r', 'o']
   const jobArray = [
     'w',
@@ -33,9 +33,9 @@ const Home = () => {
       setLetterClass('text-animate-hover')
     }, 4000)
 
-    setTimeout(() => {
-      setLoader(true)
-    }, 3000)
+    // setTimeout(() => {
+    //   setLoader(true)
+    // }, 3000)
   }, [])
 
   return (
