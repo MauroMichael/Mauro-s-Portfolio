@@ -7,6 +7,7 @@
 .top-tags {
     bottom: auto;
     top: 35px;
+    left: 0px;
 }
 
 .tags {
@@ -126,3 +127,8 @@
     left: 50%;
 }
 
+@media (max-width: 360px){
+    .tags {
+        left: 90px;
+    }
+}

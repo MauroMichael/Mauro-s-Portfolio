@@ -12,7 +12,7 @@
 
     h1 {
         color: #fff;
-        font-size: 53px;
+        font-size: 2.4rem;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -34,8 +34,8 @@
             color: #ffd700;
             font-size: 18px;
             position: absolute;
-            margin-top: 30px;
-            margin-left: 18px;
+            margin-top: 65px;
+            margin-left: -300px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
@@ -52,9 +52,10 @@
 
     h2 {
         color: #8d8d8d;
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-right: -120px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 15px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
@@ -81,6 +82,23 @@
         &:hover {
             background: #ffd700;
             color: #333
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .text-zone {
+            left: 25%;
+            top: 45%;
+        }
+        h1 {
+            margin-right: -90px;
+            font-size: 1.8rem;
+            &::after {
+                margin-left: -190px;
+            }
+        }
+        h2 {
+            margin-top: 80px;
         }
     }
 }
