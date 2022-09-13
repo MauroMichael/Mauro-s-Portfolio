@@ -19,16 +19,16 @@ import Pitresb from '../../assets/images/pi_tres_b.jpg';
 class DemoCarousel extends Component {
     render() {
         return (
-            <div className='container proyects-page'>
+            <div className='container projects-page'>
 
             <Carousel showThumbs={false} showArrows={true}  infiniteLoop={true}>
                 <div>
                     <img src={Piuno} alt='piuno'/>
-                    <p className="legend">Landing - Individual - Proyect</p>
+                    <p className="legend">Landing - Individual - Project</p>
                 </div>
                 <div>
                     <img src={Pidos} alt='pidos' />
-                    <p className="legend">Home - Individual - Proyect</p>
+                    <p className="legend">Home - Individual - Project</p>
                 </div>
                 <div>
                     <img src={Pitres} alt='pitres' />
@@ -40,27 +40,27 @@ class DemoCarousel extends Component {
                 </div>
                 <div>
                     <img src={Pfuno} alt='Pfuno'/>
-                    <p className="legend">Home - Final - Proyect</p>
+                    <p className="legend">Home - Final - Project</p>
                 </div>
                 <div>
                     <img src={Pfdos} alt='Pfdos' />
-                    <p className="legend">Products - Final - Proyect</p>
+                    <p className="legend">Products - Final - Project</p>
                 </div>
                 <div>
                     <img src={Pftres} alt='Pftres' />
-                    <p className="legend">Admin - Final - Proyect</p>
+                    <p className="legend">Admin - Final - Project</p>
                 </div>
                 <div>
                     <img src={Pfcuatro} alt='Pfcuatro'/>
-                    <p className="legend">Favorites - Final - Proyect</p>
+                    <p className="legend">Favorites - Final - Project</p>
                 </div>
                 <div>
                     <img src={Pfcinco} alt='Pfcinco' />
-                    <p className="legend">Shopping Cart - Final - Proyect</p>
+                    <p className="legend">Shopping Cart - Final - Project</p>
                 </div>
                 <div>
                     <img src={Pfseis} alt='Pfseis' />
-                    <p className="legend">Product - Final - Proyect</p>
+                    <p className="legend">Product - Final - Project</p>
                 </div>
             </Carousel>
             </div>

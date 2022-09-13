@@ -79,3 +79,9 @@
       transform: rotateX(90deg);
     }
   }
+
+@media (max-width: 390px) {
+  .stage-cube-cont {
+   display: none;
+  }
+}
