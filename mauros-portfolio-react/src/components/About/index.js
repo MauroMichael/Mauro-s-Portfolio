@@ -87,10 +87,13 @@ const About = () => {
           modularizables so being able program with a team.
         </p>
         <p>
-          Have I learned how to program and do I know almost everything there is
-          to know? Never!!. You should never lose your sense of astonishment and
-          curiosity as a developer, and that's my motto. Explaining and teaching
-          others gives me as much satisfaction as learning new things.
+          Will I ever know everything there is to know about programming?
+          Definitely not, and that is part of what keeps me motivated. After
+          years of working in development, I still believe curiosity and
+          continuous learning are essential to growing as a developer. I also
+          find great satisfaction in sharing knowledge, whether that means
+          explaining an idea, helping a teammate, or learning something new
+          through collaboration.
         </p>
         <p>
           Computer Science is my universe where I seek an answer to all unknowns
