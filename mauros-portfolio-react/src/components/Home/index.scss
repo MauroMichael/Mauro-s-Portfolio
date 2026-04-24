@@ -16,6 +16,7 @@
         color: #fff;
         font-size: 2.4rem;
         margin: 0;
+        line-height: 1.1;
         font-family: 'Coolvetica';
         font-weight: 400;
 
@@ -104,9 +105,17 @@
 
         h1 {
             font-size: 2rem;
+            line-height: 1.08;
+            margin-bottom: 1.75rem;
 
             &::after {
                 margin-left: -210px;
+                margin-top: 54px;
+            }
+
+            img {
+                width: 44px;
+                margin-left: 10px;
             }
         }
 
@@ -118,6 +127,7 @@
         .flat-button {
             margin-top: 1.25rem;
             margin-right: 0.75rem;
+            letter-spacing: 2px;
         }
     }
 
@@ -127,21 +137,31 @@
         }
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.55rem;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
 
             &::before {
                 margin-top: -28px;
             }
 
             &::after {
-                margin-left: -170px;
-                margin-top: 48px;
+                margin-left: -145px;
+                margin-top: 38px;
+                font-size: 16px;
+            }
+
+            img {
+                width: 38px;
+                margin-left: 8px;
+                margin-bottom: -4px;
             }
         }
 
         h2 {
-            font-size: 0.85rem;
-            margin-top: 1.5rem;
+            font-size: 0.78rem;
+            margin-top: 0.8rem;
+            letter-spacing: 1px;
         }
 
         a {
@@ -150,10 +170,12 @@
 
         .flat-button {
             float: none;
-            display: inline-block;
+            display: block;
+            width: 100%;
+            text-align: center;
             margin-top: 1rem;
             padding: 10px 14px;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
     }
 }

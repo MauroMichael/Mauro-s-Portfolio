@@ -25,6 +25,7 @@
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
+  z-index: 2;
 }
 
 .top-tag-html {
@@ -174,12 +175,12 @@
   }
 
   .top-tag-html {
-    top: 0.75rem;
+    top: 5.9rem;
     left: 0.75rem;
   }
 
   .top-tags {
-    top: 2.2rem;
+    top: 7.3rem;
     left: 1.5rem;
   }
 
@@ -238,11 +239,12 @@
   }
 
   .top-tags {
-    top: 2rem;
+    top: 7rem;
     left: 1rem;
   }
 
   .top-tag-html {
+    top: 5.6rem;
     left: 0.4rem;
   }
 
