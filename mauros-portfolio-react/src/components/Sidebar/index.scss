@@ -1,9 +1,10 @@
 .nav-bar {
   background: #181818;
   width: 70px;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 3;
   min-height: 500px;
 
@@ -127,6 +128,77 @@
         &:hover svg {
           color: #ffd700;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    width: 100%;
+    height: 72px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .logo {
+      padding: 0;
+
+      img {
+        margin: 0;
+      }
+    }
+
+    nav {
+      position: static;
+      height: auto;
+      margin-top: 0;
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      a {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+      }
+    }
+
+    ul {
+      position: static;
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      li a {
+        padding: 0.35rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 0 0.75rem;
+
+    nav {
+      gap: 0;
+
+      a {
+        width: 36px;
+        font-size: 18px;
+      }
+    }
+
+    ul {
+      gap: 0;
+
+      li a {
+        font-size: 14px;
       }
     }
   }

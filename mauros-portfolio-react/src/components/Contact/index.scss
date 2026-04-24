@@ -78,11 +78,21 @@
     }
 }
 
+@media (max-width: 768px) {
+  .contact-form {
+    ul {
+      li.half {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+      }
+    }
 
-
-
-
-
-
-
-
+    .flat-button {
+      float: none;
+      width: 100%;
+      max-width: 12rem;
+      display: inline-block;
+    }
+  }
+}

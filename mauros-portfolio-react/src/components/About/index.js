@@ -9,10 +9,61 @@ import {
   faCss3,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faDatabase,
+  faMobileScreenButton,
+  faServer,
+  faSitemap,
+  faVialCircleCheck,
+  faWandMagicSparkles,
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
+  const primaryCubeFaces = [
+    {
+      className: 'face1',
+      icon: faDatabase,
+      color: '#4DB6AC',
+      label: 'MongoDB',
+    },
+    {
+      className: 'face2',
+      icon: faServer,
+      color: '#FF8A65',
+      label: 'Express',
+    },
+    { className: 'face3', icon: faNodeJs, color: '#3C873A', label: 'Node.js' },
+    {
+      className: 'face4',
+      icon: faVialCircleCheck,
+      color: '#64B5F6',
+      label: 'Testing',
+    },
+    { className: 'face5', icon: faSitemap, color: '#81C784', label: 'SQL' },
+    {
+      className: 'face6',
+      icon: faWandMagicSparkles,
+      color: '#FFD54F',
+      label: 'REST',
+    },
+  ]
+
+  const secondaryCubeFaces = [
+    { className: 'face1', icon: faHtml5, color: '#F06529', label: 'HTML5' },
+    { className: 'face2', icon: faJsSquare, color: '#EFD81D', label: 'JavaScript' },
+    {
+      className: 'face3',
+      icon: faMobileScreenButton,
+      color: '#BA68C8',
+      label: 'TypeScript',
+    },
+    { className: 'face4', icon: faCss3, color: '#28A4D9', label: 'CSS3' },
+    { className: 'face5', icon: faReact, color: '#5ED4F4', label: 'React' },
+    { className: 'face6', icon: faGitAlt, color: '#EC4D28', label: 'Git' },
+  ]
 
   useEffect(() => {
     setTimeout(() => {
@@ -50,24 +101,23 @@ const About = () => {
       </div>
 
       <div className="stage-cube-cont">
-        <div className="cubespinner">
-          <div className="face1">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+        <div className="cube-stack">
+          <div className="cubespinner cube-primary">
+            {primaryCubeFaces.map((face) => (
+              <div key={face.className} className={face.className}>
+                <FontAwesomeIcon icon={face.icon} color={face.color} />
+                <span>{face.label}</span>
+              </div>
+            ))}
           </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-          </div>
-          <div className="face5">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-          </div>
-          <div className="face6">
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+
+          <div className="cubespinner cubespinner-secondary">
+            {secondaryCubeFaces.map((face) => (
+              <div key={face.className} className={face.className}>
+                <FontAwesomeIcon icon={face.icon} color={face.color} />
+                <span>{face.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

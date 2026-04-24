@@ -4,10 +4,17 @@
   position: absolute;
 }
 
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding-left: 70px;
+  overflow-x: hidden;
+}
+
 .top-tags {
   bottom: auto;
   top: 35px;
-  left: 0px;
+  left: 120px;
 }
 
 .tags {
@@ -20,35 +27,42 @@
   font-family: 'La Belle Aurore';
 }
 
-.buttom-tag-html {
+.top-tag-html {
+  top: 10px;
+  left: 100px;
+}
+
+.bottom-tag-html {
   margin-left: -20px;
 }
 
 .container {
   width: 100%;
   will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
+  min-height: calc(100vh - 3rem);
+  position: relative;
   opacity: 0;
-  top: 5%;
+  top: auto;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  padding: 5rem 0 3rem;
 }
 
 .about-page,
 .contact-page {
+  display: flex;
+  align-items: center;
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
     width: 35%;
-    vertical-align: middle;
-    display: table-cell;
+    margin-left: 10%;
     max-height: 90%;
 
     h1 {
@@ -85,11 +99,12 @@
     }
 
     p {
-      font-size: .7rem;
+      font-size: 1rem;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
-      min-width: fit-content;
+      min-width: auto;
+      max-width: 36rem;
       animation: pulse 1s;
 
       &:nth-of-type(1) {
@@ -113,10 +128,11 @@
 }
 
 .projects-page {
-  max-width: 70%;
-  position: absolute;
-  top: 12%;
-  left: 18%;
+  max-width: min(72rem, calc(100% - 12rem));
+  position: relative;
+  top: auto;
+  left: auto;
+  margin: 0 auto;
 }
 
 .home-loader {
@@ -126,27 +142,111 @@
   left: 50%;
 }
 
-@media (max-width: 390px) {
-  .tags {
-    left: 90px;
+@media (max-width: 1100px) {
+  .page {
+    padding-left: 60px;
   }
+
   .about-page,
   .contact-page {
+    align-items: flex-start;
+
     .text-zone {
-      left: 25%;
-      width: 70%;;
+      width: 46%;
+      margin-left: 8%;
+    }
+  }
+
+  .projects-page {
+    max-width: min(54rem, calc(100% - 8rem));
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-left: 0;
+    padding-top: 5.5rem;
+  }
+
+  .tags {
+    left: 1.5rem;
+    font-size: 16px;
+  }
+
+  .top-tag-html {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .top-tags {
+    top: 2.2rem;
+    left: 1.5rem;
+  }
+
+  .container {
+    min-height: calc(100vh - 5.5rem);
+    padding: 4.5rem 0 2.5rem;
+  }
+
+  .about-page,
+  .contact-page {
+    display: block;
+
+    .text-zone {
+      width: min(38rem, calc(100% - 5rem));
+      margin: 0 auto;
+
       h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        left: 0;
       }
+
       p {
-        font-size: .8rem;
+        min-width: auto;
+        font-size: 0.95rem;
       }
     }
   }
+
   .projects-page {
-    left: 25%;
+    max-width: calc(100% - 3rem);
   }
+}
+
+@media (max-width: 480px) {
+  .tags {
+    left: 1rem;
+  }
+
+  .about-page,
+  .contact-page {
+    .text-zone {
+      width: calc(100% - 2.5rem);
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .projects-page {
+    max-width: calc(100% - 1.5rem);
+  }
+
   .top-tags {
-    top: 0px;
+    top: 2rem;
+    left: 1rem;
+  }
+
+  .top-tag-html {
+    left: 0.4rem;
+  }
+
+  .bottom-tag-html {
+    margin-left: -12px;
   }
 }

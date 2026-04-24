@@ -1,13 +1,15 @@
 .home-page {
+    display: flex;
+    align-items: center;
    
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
         width: 40%;
+        margin-left: 10%;
         max-height: 90%;
-
     }
 
     h1 {
@@ -39,6 +41,7 @@
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
+
         img {
             width: 52px;
             margin-left: 20px;
@@ -53,7 +56,6 @@
     h2 {
         color: #8d8d8d;
         margin-top: 50px;
-        margin-right: -120px;
         font-weight: 400;
         font-size: 15px;
         font-family: sans-serif;
@@ -85,20 +87,73 @@
         }
     }
     
-    @media (max-width: 390px) {
+    @media (max-width: 1100px) {
         .text-zone {
-            left: 25%;
-            top: 45%;
+            width: 48%;
+            margin-left: 8%;
         }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+
+        .text-zone {
+            width: min(38rem, calc(100% - 5rem));
+            margin: 0 auto;
+        }
+
         h1 {
-            margin-right: -90px;
-            font-size: 1.8rem;
+            font-size: 2rem;
+
             &::after {
-                margin-left: -190px;
+                margin-left: -210px;
             }
         }
+
         h2 {
-            margin-top: 80px;
+            margin-top: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .flat-button {
+            margin-top: 1.25rem;
+            margin-right: 0.75rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text-zone {
+            width: calc(100% - 2.5rem);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+
+            &::before {
+                margin-top: -28px;
+            }
+
+            &::after {
+                margin-left: -170px;
+                margin-top: 48px;
+            }
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            margin-left: 0;
+        }
+
+        .flat-button {
+            float: none;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 14px;
+            letter-spacing: 2px;
         }
     }
 }
