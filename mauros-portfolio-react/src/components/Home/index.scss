@@ -108,8 +108,13 @@
             line-height: 1.08;
             margin-bottom: 1.75rem;
 
+            &::before {
+                left: 1.2rem;
+            }
+
             &::after {
-                margin-left: -190px;
+                left: 1.2rem;
+                margin-left: 0;
                 margin-top: 54px;
             }
 
@@ -142,11 +147,13 @@
             margin-bottom: 1.5rem;
 
             &::before {
+                left: 1rem;
                 margin-top: -28px;
             }
 
             &::after {
-                margin-left: -132px;
+                left: 1rem;
+                margin-left: 0;
                 margin-top: 38px;
                 font-size: 16px;
             }
