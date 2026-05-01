@@ -9,6 +9,11 @@
             max-height: 70vh;
             object-fit: cover;
         }
+
+        .slide img.contain-image {
+            object-fit: contain;
+            background: #000;
+        }
     }
 }
 

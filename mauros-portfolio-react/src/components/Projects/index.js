@@ -67,19 +67,19 @@ class DemoCarousel extends Component {
                     <p className="legend">Product - Final - Project</p>
                 </div>
                 <div>
-                    <img src={StudioPayments} alt='StudioPayments' />
+                    <img src={StudioPayments} alt='StudioPayments' className='contain-image' />
                     <p className="legend">Studio - Payments</p>
                 </div>
                 <div>
-                    <img src={TwlConfigutaions} alt='TwlConfigutaions' />
+                    <img src={TwlConfigutaions} alt='TwlConfigutaions' className='contain-image' />
                     <p className="legend">TWL - Configurations</p>
                 </div>
                 <div>
-                    <img src={TwlPlatfroms} alt='TwlPlatfroms' />
+                    <img src={TwlPlatfroms} alt='TwlPlatfroms' className='contain-image' />
                     <p className="legend">TWL - Platforms</p>
                 </div>
                 <div>
-                    <img src={TwlTarifas} alt='TwlTarifas' />
+                    <img src={TwlTarifas} alt='TwlTarifas' className='contain-image' />
                     <p className="legend">TWL - Tarifas</p>
                 </div>
             </Carousel>
