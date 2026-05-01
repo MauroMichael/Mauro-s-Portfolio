@@ -12,6 +12,10 @@ import Pfcuatro from '../../assets/images/pf_cuatro.jpg';
 import Pfcinco from '../../assets/images/pf_cinco.jpg';
 import Pfseis from '../../assets/images/pf_seis.jpg';
 import Pitresb from '../../assets/images/pi_tres_b.jpg';
+import StudioPayments from '../../assets/images/Studio_payments.jpg';
+import TwlConfigutaions from '../../assets/images/twl_configutaions.jpg';
+import TwlPlatfroms from '../../assets/images/twl_platfroms.jpg';
+import TwlTarifas from '../../assets/images/twl_tarifas.jpg';
 
 
 
@@ -61,6 +65,22 @@ class DemoCarousel extends Component {
                 <div>
                     <img src={Pfseis} alt='Pfseis' />
                     <p className="legend">Product - Final - Project</p>
+                </div>
+                <div>
+                    <img src={StudioPayments} alt='StudioPayments' />
+                    <p className="legend">Studio - Payments</p>
+                </div>
+                <div>
+                    <img src={TwlConfigutaions} alt='TwlConfigutaions' />
+                    <p className="legend">TWL - Configurations</p>
+                </div>
+                <div>
+                    <img src={TwlPlatfroms} alt='TwlPlatfroms' />
+                    <p className="legend">TWL - Platforms</p>
+                </div>
+                <div>
+                    <img src={TwlTarifas} alt='TwlTarifas' />
+                    <p className="legend">TWL - Tarifas</p>
                 </div>
             </Carousel>
             </div>
