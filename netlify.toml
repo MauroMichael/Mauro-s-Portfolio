@@ -1,0 +1,4 @@
+[build]
+  base = "mauros-portfolio-react"
+  command = "npm run build"
+  publish = "build"
