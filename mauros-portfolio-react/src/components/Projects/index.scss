@@ -5,14 +5,19 @@
 
 .projects-page {
     .carousel {
-        .slide img {
-            max-height: 70vh;
-            object-fit: cover;
+        .slide {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
         }
 
-        .slide img.contain-image {
+        .slide img {
+            width: auto !important;
+            max-width: 100%;
+            max-height: 70vh;
             object-fit: contain;
-            background: #000;
         }
     }
 }
@@ -20,6 +25,10 @@
 @media (max-width: 768px) {
     .projects-page {
         .carousel {
+            .slide {
+                min-height: 50vh;
+            }
+
             .slide img {
                 max-height: 50vh;
             }
@@ -38,6 +47,10 @@
 @media (max-width: 480px) {
     .projects-page {
         .carousel {
+            .slide {
+                min-height: 38vh;
+            }
+
             .slide img {
                 max-height: 38vh;
             }
